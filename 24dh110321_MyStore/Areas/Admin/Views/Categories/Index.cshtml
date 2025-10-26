@@ -7,6 +7,7 @@
 
 <h2 class="bg-success">DANH SÁCH DANH MỤC SẢN PHẨM</h2>
 
+<table class="table bg-info clo-md-6">
 <p>
     @Html.ActionLink("Thêm mới", "Create", null, new {@class = "btn btn-primary btn-sm" })
 </p>
@@ -25,7 +26,7 @@
             @Html.DisplayFor(modelItem => item.CategoryName)
         </td>
         <td>
-            @Html.ActionLink("cập nhật", "Edit", new { id = item.CategoryID }, new { @class = "btn btn-primary btn-sm" }) |
+            @Html.ActionLink("sửa", "Edit", new { id = item.CategoryID }, new { @class = "btn btn-primary btn-sm" }) |
             @Html.ActionLink("chi tiết", "Details", new { id = item.CategoryID }, new { @class = "btn btn-primary btn-sm" }) |
             @Html.ActionLink("xóa", "Delete", new { id = item.CategoryID }, new { @class = "btn btn-primary btn-sm" })
         </td>
